@@ -1,0 +1,95 @@
+.progress__meter__outer__wrapper {
+  background: linear-gradient(to bottom, rgba(108, 82, 67, 1), rgba(108, 82, 67, 0));
+  border-radius: 1rem;
+  padding: 0.3rem;
+  margin-right: 1.7rem;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 1.7rem;
+  }
+}
+
+.progress__meter {
+  background: #0e0e0e;
+  border-radius: 0.7rem;
+  width: 97.7rem;
+
+  @media screen and (max-width: 768px) {
+    width: 33rem;
+  }
+}
+
+.progress__total__wrapper {
+  padding: 4.2rem 4.6rem;
+  border-bottom: 0.15rem solid rgba($color: #515151, $alpha: 0.5);
+
+  @media screen and (max-width: 768px) {
+    padding: 2.2rem 1.7rem;
+  }
+}
+
+.progress__total__title {
+  color: var(--dark-brown);
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+
+.progress__total__sol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  margin-top: 2.1rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
+}
+
+.progress__total__logo__image {
+  width: 4.9rem;
+  height: 4.9rem;
+
+  @media screen and (max-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.progress__total__amount {
+  font-size: 4rem;
+  line-height: 3rem;
+  color: var(--brown);
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.3rem;
+  }
+}
+
+.progress__card__connect__button {
+  padding: 1.4rem 10rem;
+  background: #3E3027;
+  margin-left: 4.6rem;
+  margin-top: 3.4rem;
+  margin-bottom: 7.6rem;
+  border: 0.2rem solid #3E3027;
+  transition: all 0.3s ease;
+
+
+  &:hover {
+    background: none;
+    border: 0.2rem solid var(--white);
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.4rem 5rem;
+    margin-left: 0;
+    margin-bottom: 3rem;
+    margin-left: 2.2rem;
+    width: 28.2rem;
+  }
+}

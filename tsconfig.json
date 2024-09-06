@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@solana/wallet-adapter-wallets": ["./node_modules/@solana/wallet-adapter-wallets/lib/types"],
+      "@solana-mobile/wallet-adapter-mobile": [
+        "./node_modules/@solana-mobile/wallet-adapter-mobile/lib/types"
+      ]
+    },
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src", "./types/index.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
